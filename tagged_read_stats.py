@@ -37,8 +37,10 @@ def do_count(fqfile, tags, beg):
     match_perc = (matched / tot) * 100
     unmatch_perc = (unmatched / tot) * 100
     print('***********************')
-    print('Total reads: {0}'.format(tot))
+    print(fqfile)
     print('***********************')
+    print('Total reads: {0}'.format(tot))
+    print('-----------------------')
     print('Tag Match: {0} ({1:.1f}%)'.format(matched, match_perc))
     print('No Match:  {0} ({1:.1f}%)'.format(unmatched, unmatch_perc))
     print('***********************')
